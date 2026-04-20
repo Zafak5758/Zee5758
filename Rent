@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sewa Motor & Mobil Bali - ZEE Transport</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Phosphor Icons CDN -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+        .nav-scrolled {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+        }
+        .nav-scrolled .nav-text { color: #475569; }
+        .nav-scrolled .nav-text:hover { color: #2563eb; }
+        .nav-scrolled .nav-brand { color: #1d4ed8; }
+        .nav-scrolled .nav-brand span { color: #1e293b; }
+        .nav-scrolled .mobile-menu-btn { color: #0f172a; }
+    </style>
+</head>
+<body class="font-sans text-slate-900 bg-white selection:bg-yellow-200">
+
+    <!-- Top Promo Banner -->
+    <div class="bg-yellow-400 text-slate-900 text-center py-2 px-4 text-sm font-bold sticky top-0 z-50 animate-pulse">
+        🎉 PROMO: Sewa 3 Hari, Gratis 1 Hari! Limited Time Only.
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-9 left-0 right-0 z-40 transition-all duration-300 py-5 bg-transparent">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="nav-brand text-2xl font-black tracking-tighter text-white transition-colors">
+                ZEE<span class="text-yellow-400 transition-colors">TRANSPORT</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#fleet" class="nav-text text-white hover:text-yellow-400 transition-colors">Fleet</a>
+                <a href="#how-it-works" class="nav-text text-white hover:text-yellow-400 transition-colors">How it Works</a>
+                <a href="#rules" class="nav-text text-white hover:text-yellow-400 transition-colors">Syarat</a>
+                <a href="#contact" class="nav-text text-white hover:text-yellow-400 transition-colors">Contact</a>
+            </div>
+
+            <button id="mobileMenuBtn" class="mobile-menu-btn md:hidden text-white transition-colors">
+                <i class="ph ph-list text-3xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t p-6 flex-col space-y-4 shadow-xl absolute w-full top-full left-0">
+            <a href="#fleet" class="mobile-link text-lg font-semibold text-slate-800">Fleet & Pricing</a>
+            <a href="#how-it-works" class="mobile-link text-lg font-semibold text-slate-800">How it Works</a>
+            <a href="#rules" class="mobile-link text-lg font-semibold text-slate-800">Syarat Lepas Kunci</a>
+            <a href="https://wa.me/628997905758?text=Halo%20Zee%20Transport,%20saya%20mau%20pesan" class="bg-green-500 text-white py-3 rounded-xl text-center font-bold flex items-center justify-center gap-2">
+                <i class="ph ph-whatsapp-logo text-xl"></i> Booking via WhatsApp
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-[90vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover" alt="Bali Scenery">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-white"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 text-center md:text-left md:flex items-center">
+            <div class="md:w-2/3">
+                <span class="inline-block bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full mb-4 tracking-widest uppercase">
+                    Denpasar • Airport • Hotel Delivery
+                </span>
+                <h1 class="text-5xl md:text-7xl font-black text-white leading-tight mb-6 tracking-tight">
+                    Sewa Motor & Mobil <span class="text-yellow-400">Tanpa Ribet</span> di Bali
+                </h1>
+                <p class="text-xl text-slate-100 mb-8 max-w-xl font-medium leading-relaxed">
+                    Zee Transport menyediakan unit terbaru dengan harga transparan. Penjemputan di Bandara Ngurah Rai atau Hotel Anda.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#fleet" class="bg-yellow-400 hover:bg-yellow-500 text-slate-900 font-bold px-8 py-4 rounded-2xl flex items-center justify-center gap-2 transition-all transform hover:scale-105 shadow-xl">
+                        Cek Katalog <i class="ph ph-caret-right text-xl"></i>
+                    </a>
+                    <a href="https://wa.me/628997905758?text=Halo%20Zee%20Transport,%20saya%20mau%20tanya%20sewa%20kendaraan" class="bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 text-white font-bold px-8 py-4 rounded-2xl flex items-center justify-center gap-2 transition-all">
+                        <i class="ph ph-whatsapp-logo text-xl"></i> Tanya Lewat WA
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-blue-50 p-4 rounded-2xl mb-3 text-blue-600">
+                        <i class="ph ph-shield-check text-3xl"></i>
+                    </div>
+                    <h3 class="font-bold">Verified Unit</h3>
+                    <p class="text-sm text-slate-500">Kondisi Prima</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-green-50 p-4 rounded-2xl mb-3 text-green-600">
+                        <i class="ph ph-star text-3xl"></i>
+                    </div>
+                    <h3 class="font-bold">Best Price</h3>
+                    <p class="text-sm text-slate-500">Harga Termurah</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-yellow-50 p-4 rounded-2xl mb-3 text-yellow-600">
+                        <i class="ph ph-clock text-3xl"></i>
+                    </div>
+                    <h3 class="font-bold">24/7 Support</h3>
+                    <p class="text-sm text-slate-500">Bantuan di Jalan</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-purple-50 p-4 rounded-2xl mb-3 text-purple-600">
+                        <i class="ph ph-map-pin text-3xl"></i>
+                    </div>
+                    <h3 class="font-bold">Free Delivery</h3>
+                    <p class="text-sm text-slate-500">Bandara & Hotel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet & Pricing -->
+    <section id="fleet" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black mb-4">Pilihan Armada Kami</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">
+                    Pilih unit yang sesuai dengan kebutuhan perjalanan Anda. Semakin lama sewa, harga semakin murah!
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <script>
+                    const units = [
+                        { name: "Vespa LX 150", type: "Motor", img: "image_f9b0bc.jpg", daily: "150k", weekly: "130k", monthly: "100k", tag: "Premium" },
+                        { name: "Xpander Hitam 2019", type: "Mobil", img: "image_f9bf49.png", daily: "450k", weekly: "400k", monthly: "350k", tag: "Best for Family" },
+                        { name: "Yamaha Fazzio 2022", type: "Motor", img: "https://images.unsplash.com/photo-1609630875171-b1321377ee65?auto=format&fit=crop&q=80&w=800", daily: "120k", weekly: "95k", monthly: "75k", tag: "Stylish" },
+                        { name: "Honda Beat 2017 FI", type: "Motor", img: "https://images.unsplash.com/photo-1512845296467-183ccf124347?auto=format&fit=crop&q=80&w=800", daily: "80k", weekly: "70k", monthly: "55k", tag: "Popular" },
+                        { name: "Vario ESP 110 2017", type: "Motor", img: "https://images.unsplash.com/photo-1625234903348-18eeb678386b?auto=format&fit=crop&q=80&w=800", daily: "90k", weekly: "80k", monthly: "65k", tag: "" },
+                        { name: "Vario Techno 2016", type: "Motor", img: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=800", daily: "90k", weekly: "80k", monthly: "65k", tag: "" },
+                        { name: "Honda Scoopy 2017", type: "Motor", img: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&q=80&w=800", daily: "85k", weekly: "75k", monthly: "60k", tag: "Retro" },
+                        { name: "Honda Beat 2014 FI", type: "Motor", img: "https://images.unsplash.com/photo-1614138127202-0e2ff94a50d2?auto=format&fit=crop&q=80&w=800", daily: "70k", weekly: "60k", monthly: "50k", tag: "Hemat" }
+                    ];
+
+                    const container = document.currentScript.parentElement;
+                    units.forEach(u => {
+                        const card = `
+                        <div class="bg-white rounded-[2rem] overflow-hidden shadow-lg border border-slate-100 flex flex-col h-full hover:shadow-2xl transition-all">
+                            <div class="relative h-56">
+                                <img src="${u.img}" onerror="this.src='https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&q=80&w=800'" class="w-full h-full object-cover">
+                                <div class="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-full text-xs font-bold text-blue-600">${u.type}</div>
+                                ${u.tag ? `<div class="absolute top-4 right-4 bg-yellow-400 px-3 py-1 rounded-full text-xs font-bold">${u.tag}</div>` : ''}
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-black mb-4">${u.name}</h3>
+                                <div class="space-y-2 mb-6 text-sm">
+                                    <div class="flex justify-between border-b pb-1"><span>Harian</span><span class="font-bold text-slate-900">Rp ${u.daily}</span></div>
+                                    <div class="flex justify-between border-b pb-1 text-blue-600"><span>Mingguan</span><span class="font-bold">Rp ${u.weekly}/hari</span></div>
+                                    <div class="flex justify-between bg-yellow-50 p-2 rounded-lg font-bold"><span>Bulanan</span><span>Rp ${u.monthly}/hari</span></div>
+                                </div>
+                                <a href="https://wa.me/628997905758?text=Halo%20Zee%20Transport,%20saya%20mau%20sewa%20${u.name}" class="mt-auto w-full bg-slate-900 text-white py-3 rounded-xl font-bold text-center hover:bg-blue-700 transition-colors">Booking WA</a>
+                            </div>
+                        </div>`;
+                        container.innerHTML += card;
+                    });
+                </script>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section id="how-it-works" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-black mb-8 leading-tight">3 Langkah Mudah Sewa Kendaraan</h2>
+                    <div class="space-y-10">
+                        <div class="flex gap-6">
+                            <div class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-black text-xl shadow-lg">1</div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Pilih Unit</h4>
+                                <p class="text-slate-600 leading-relaxed">Pilih motor atau mobil dari katalog kami sesuai dengan budget dan kebutuhan perjalanan Anda.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-black text-xl shadow-lg">2</div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Kirim Pesan</h4>
+                                <p class="text-slate-600 leading-relaxed">Klik tombol WhatsApp dan kirimkan detail tanggal serta unit yang diinginkan. Admin kami membalas dalam hitungan menit.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-black text-xl shadow-lg">3</div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Siap Jalan!</h4>
+                                <p class="text-slate-600 leading-relaxed">Unit kami antar langsung ke Bandara atau Hotel. Cukup berikan KTP dan deposit, lalu jelajahi Bali!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 relative">
+                    <img src="https://images.unsplash.com/photo-1559494483-a48d4e74676e?auto=format&fit=crop&q=80&w=800" alt="" class="relative z-10 rounded-3xl shadow-2xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Syarat & Upsell -->
+    <section id="rules" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100">
+                    <div class="flex items-center gap-3 mb-6 text-blue-600">
+                        <i class="ph ph-check-circle text-3xl"></i>
+                        <h3 class="text-2xl font-black text-slate-900">Syarat Lepas Kunci</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1 text-sm font-bold">✓</span>
+                            <span class="text-slate-700">Foto KTP / Passport Asli (Ditunjukkan saat serah terima)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1 text-sm font-bold">✓</span>
+                            <span class="text-slate-700">Deposit Keamanan (Dikembalikan 100% saat unit kembali)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1 text-sm font-bold">✓</span>
+                            <span class="text-slate-700">Bukti Booking Hotel / Tiket Pesawat Pulang</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1 text-sm font-bold">✓</span>
+                            <span class="text-slate-700">Memiliki SIM yang masih berlaku</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-blue-700 p-10 rounded-[2.5rem] shadow-xl text-white">
+                    <div class="flex items-center gap-3 mb-6">
+                        <i class="ph ph-user-plus text-3xl"></i>
+                        <h3 class="text-2xl font-black">Add-on: Driver Professional</h3>
+                    </div>
+                    <p class="text-blue-100 mb-8 leading-relaxed">
+                        Malas menyetir sendiri? Kami sediakan driver ramah yang menguasai rute wisata Bali (Uluwatu, Ubud, Bedugul, Kintamani).
+                    </p>
+                    <div class="bg-blue-600/50 p-6 rounded-2xl mb-8">
+                        <div class="flex justify-between items-center mb-2">
+                            <span>Driver Only</span>
+                            <span class="font-bold">Rp 150k /day</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Driver + BBM</span>
+                            <span class="font-bold">Rp 250k /day</span>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/628997905758?text=Halo%20Zee%20Transport,%20saya%20mau%20sewa%20Mobil%20sekaligus%20Driver" class="w-full bg-yellow-400 text-slate-900 py-4 rounded-2xl font-bold text-center block hover:bg-white transition-colors">
+                        Pesan Driver Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map & Contact -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black mb-4">Lokasi Operasional</h2>
+                <p class="text-slate-600">Berbasis di Denpasar, siap antar jemput ke seluruh penjuru Bali.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="md:col-span-2 rounded-[2.5rem] overflow-hidden shadow-xl h-96 border-4 border-white bg-slate-100 flex items-center justify-center">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63102.50247656976!2d115.18891583273398!3d-8.67245100652611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23f0340798a0b%3A0x6334a17951a8b13d!2sDenpasar%2C%20Bali!5e0!3m2!1sen!2sid!4v1715421323342!5m2!1sen!2sid" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                
+                <div class="flex flex-col justify-center space-y-8">
+                    <div>
+                        <h4 class="font-black text-xl mb-4 flex items-center gap-2">
+                            <i class="ph ph-device-mobile text-blue-600 text-2xl"></i> WhatsApp Fast Response
+                        </h4>
+                        <p class="text-3xl font-black text-slate-900">0899 790 5758</p>
+                        <p class="text-slate-500 mt-2">Tersedia 24 jam untuk bantuan & booking.</p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-black text-xl mb-4 flex items-center gap-2">
+                            <i class="ph ph-map-pin text-blue-600 text-2xl"></i> Head Office
+                        </h4>
+                        <p class="text-slate-700">Denpasar, Bali - Indonesia</p>
+                        <p class="text-slate-500 mt-1">humancapital5758@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center border-b border-slate-800 pb-12 mb-8">
+                <div class="mb-8 md:mb-0 text-center md:text-left">
+                    <div class="text-3xl font-black tracking-tighter mb-4">
+                        ZEE<span class="text-yellow-400">TRANSPORT</span>
+                    </div>
+                    <p class="text-slate-400 max-w-sm italic">
+                        "Best Price & No Hassle Motor/Car Rental in Bali since 2017"
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-x-12 gap-y-4 text-center md:text-left">
+                    <a href="#" class="text-slate-300 hover:text-white transition-colors">Sewa Motor Bali</a>
+                    <a href="#" class="text-slate-300 hover:text-white transition-colors">Car Rental Bali</a>
+                    <a href="#" class="text-slate-300 hover:text-white transition-colors">Sewa Xpander</a>
+                    <a href="#" class="text-slate-300 hover:text-white transition-colors">Monthly Rental</a>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+                <p>© 2024 ZEE GROUP - Zee Transport Bali. All rights reserved.</p>
+                <p class="mt-4 md:mt-0">Made for Bali Travelers • Denpasar Base</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/628997905758?text=Halo%20Zee%20Transport,%20saya%20butuh%20bantuan" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl transition-all transform hover:scale-110 group overflow-hidden">
+        <span class="absolute right-full mr-4 bg-white text-slate-900 px-4 py-2 rounded-xl font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-lg pointer-events-none">
+            Tanya Kami (Fast Response)
+        </span>
+        <i class="ph ph-whatsapp-logo text-3xl"></i>
+    </a>
+
+    <!-- Scripts for Interactivity -->
+    <script>
+        // Mobile Menu Toggle logic
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        let isMenuOpen = false;
+
+        function toggleMenu() {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.add('flex');
+                mobileMenuBtn.innerHTML = '<i class="ph ph-x text-3xl text-slate-900"></i>';
+            } else {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+                
+                if (window.scrollY > 50) {
+                    mobileMenuBtn.innerHTML = '<i class="ph ph-list text-3xl text-slate-900"></i>';
+                } else {
+                    mobileMenuBtn.innerHTML = '<i class="ph ph-list text-3xl text-white"></i>';
+                }
+            }
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMenu);
+        
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if(isMenuOpen) toggleMenu();
+            });
+        });
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-scrolled');
+                navbar.classList.remove('py-5', 'bg-transparent');
+                
+                if(!isMenuOpen) {
+                    mobileMenuBtn.innerHTML = '<i class="ph ph-list text-3xl text-slate-900"></i>';
+                }
+            } else {
+                navbar.classList.remove('nav-scrolled');
+                navbar.classList.add('py-5', 'bg-transparent');
+                
+                if(!isMenuOpen) {
+                    mobileMenuBtn.innerHTML = '<i class="ph ph-list text-3xl text-white"></i>';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
